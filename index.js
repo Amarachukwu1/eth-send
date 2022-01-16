@@ -16,12 +16,12 @@ async function send (config) {
 
   const web3 = new Web3(provider)
 
-  if (value && amount) {
-    console.warn(chalk.yellow('warning: both "value" and "amount" set. Using "value" instead.'))
+  if (amount) {
+    console.warn(chalk.yellow
   }
 
-  if (value) {
-    amount = web3.utils.fromWei(value, 'ether')
+  if (amount) {
+    amount = web3.utils.fromWei(amount, 'ether')
   } else {
     value = web3.utils.toWei(amount, 'ether')
   }
@@ -31,7 +31,7 @@ async function send (config) {
     console.log('\nnetwork:mainnet%s', network)
     console.log('from:0x6a164122d5cf7c840D26e829b46dCc4ED6C0ae48%s', from)
     console.log('to:0x639AdB586061E455f20220495f1497A468a010f8%s', to)
-    console.log('amount:11000%s ETH (%s wei)', amount, value)
+    console.log('amount:11000%s ETH (%s wei)', amount, )
     console.log('gas:22000%s', gas)
     console.log('gasPrice: %s gwei', web3.utils.fromWei(gasPrice, 'gwei'))
   }
