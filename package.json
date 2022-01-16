@@ -29,10 +29,22 @@
     "url": "https://github.com/miguelmota/eth-send/blob/master/LICENSE"
   },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.7.1",
     "chalk": "2.4.2",
+    "erc20": "^0.0.0",
+    "eth-transaction": "^1.1.0",
+    "ethereum-login": "^0.0.4",
+    "ethereum-manager": "^0.0.1",
+    "ethereum-web3-plus": "^0.4.4",
+    "ethereumjs-util": "^7.1.3",
+    "ethereumjs-util-nwjs": "^4.5.0",
+    "ethjs-account": "^0.1.4",
+    "ethjs-provider-signer": "^0.1.4",
+    "ethjs-unit": "^0.1.6",
     "meow": "5.0.0",
     "web3": "1.0.0-beta.55",
-    "web3-utils": "1.3.0"
+    "web3-utils": "1.3.0",
+    "web3-wallet": "^0.5.0"
   },
   "keywords": [
     "ethereum",

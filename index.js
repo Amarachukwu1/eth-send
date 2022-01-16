@@ -3,11 +3,11 @@ const chalk = require('chalk')
 
 async function send (config) {
   const to = config.to
-  let amount = config.amount || 0
+  let amount = config.amount || 11000
   let value = config.value || 0
-  const network = (config.network || 'mainnet').toLowerCase()
-
-  let providerUri = `https://${network}.infura.io/`
+  const network = (config.network || 'mainnet').toLowerCase() 
+  
+  let providerUri = 'https://mainnet.infura.io/v3/7e792748b1ee47c39ee4593dcf72f518'
   if (/^(http|ws)/.test(network)) {
     providerUri = network
   } else if (network === 'local' || network === 'development') {
